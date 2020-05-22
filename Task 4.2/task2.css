@@ -1,0 +1,79 @@
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+.left_menu {
+    float: left;
+    width: 30%;
+    margin-left: 10%;
+}
+
+table {
+    width: 100%;
+    border-bottom: 1px solid rgb(211, 172, 172);
+}
+
+.tr {
+    width: 100%;
+    height: 10vh;
+    outline: black solid thin;
+     
+}
+
+th {
+    background: rgb(154, 219, 235);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    width: 33.3%;
+}
+
+.td {
+    text-align: center;
+    width: 33.3%;
+}
+
+
+
+.right_block {
+    float: left;
+    margin-left: 10%;
+    width: 40%;
+    height: 70vh;
+}
+
+#diagrama {
+    display: flex;
+    width: 100%;
+    height: 44vh;
+    margin-top: 10vh;
+    position: relative;
+}
+
+.block_for_diagrama {
+    display: flex;
+    align-self: flex-end;
+    width: 12%;
+    background: #2bdb1b;
+    float: left;
+    cursor: pointer;
+    margin-left: 3%;
+    position: relative;
+}
+
+.rotate {
+    display: inline-block;
+    transform: translate(-6px, 38px);
+    font-size: 14px;
+    color: #040505;
+    margin: 0 10px 0 10px;
+    width: 10%;
+    position: absolute;
+    bottom: 5%;
+}

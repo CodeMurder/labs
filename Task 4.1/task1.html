@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task #1</title>
+    <script src="./js1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+
+        #imagetochange {
+            border: 3px solid;
+            border-color: red;
+            width: 800px;
+            height: 450px;
+        }
+
+        .submitbutton {
+            width: 200px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        
+        input.invalid {
+            border: 2px solid rgb(253, 73, 73);
+            background: rgb(255, 138, 138);
+        }
+
+        input.valid {
+            border: 2px solid rgb(124, 253, 73);
+            background: rgb(165, 255, 138);
+        }
+
+        h1,
+        h2 {
+            font-weight: 700;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+
+        label {
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        input {
+            width: 300px;
+            height: 25px;
+            border: 1px solid gray;
+            border-radius: 30px 30px 30px 30px;
+            outline: none;
+            padding-left: 0.5%;
+        }
+
+        input:focus {
+            box-shadow: 0 0 1pt 1pt rgb(0, 174, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Зміна властивостей зображення</h1>
+    <img src="https://klike.net/uploads/posts/2019-05/1556706800_1.jpg"
+        alt="Some text" id="imagetochange">
+
+    <form action="#" onsubmit="return false" name="imgchange" id="photo">
+        <h2>Зміна розмірів</h2>
+        <label for="imgwidth">Ширина(width):</label>
+        <input type="text" name="imgwidth" required="required" placeholder="up to 4 digits" maxlength="4">
+        <br />
+        <br />
+        <label for="imgheight">Висота(height):</label>
+        <input type="text" name="imgheight" required="required" placeholder="up to 4 digits" maxlength="4">
+        <h2>Зміна рамки</h2>
+        <label for="borderweight">Товщина рамки:</label>
+        <input type="text" name="borderweight" required="required" placeholder="up to 2 digits" maxlength="2">
+        <br />
+        <br />
+        <label for="bordercolor">Колір рамки:</label>
+        <input type="text" name="bordercolor" required="required" placeholder="gray">
+        <h2>Додатково</h2>
+        <label for="imgalttext">Альтернативний текст:</label>
+        <input type="text" name="imgalttext" required="required" placeholder="some text">
+        <br />
+        <br />
+        <input type="submit" value="Застосувати параметри" class="submitbutton" name="changebutton">
+    </form>
+</body>
+
+</html>
